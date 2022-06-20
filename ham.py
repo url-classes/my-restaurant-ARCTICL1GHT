@@ -17,37 +17,37 @@ class Ham:
         self.__price += 10
 
     def addcarne(self):
-        self.__pan += 1
+        self.__carne += 1
         self.__time += 6
         self.__price += 12
 
     def addketchup(self):
-        self.__pan += 1
+        self.__ketpchup += 1
         self.__time += 4
         self.__price += 1.5
 
     def addmayonesa(self):
-        self.__pan += 1
+        self.__mayonesa += 1
         self.__time += 6
         self.__price += 1.5
 
     def addtocino(self):
-        self.__pan += 1
+        self.__tocino += 1
         self.__time += 5
         self.__price += 8
 
     def addqueso(self):
-        self.__pan += 1
+        self.__queso += 1
         self.__time += 3
         self.__price += 3
 
     def addcebolla(self):
-        self.__pan += 1
+        self.__cebolla += 1
         self.__time += 3
         self.__price += 2
 
     def addtomate(self):
-        self.__pan += 1
+        self.__tomate += 1
         self.__time += 3
         self.__price += 2
 
@@ -55,8 +55,9 @@ class Ham:
         return self.__price
 
     def getresult(self):
-        return print(f"{self.__pan}-{self.__queso}-{self.__tomate}-{self.__cebolla}-{self.__mayonesa}-"
-                     f"{self.__carne}-{self.__ketpchup}-{self.__tocino}")
+        return print(f"Pan: {self.__pan} - Queso: {self.__queso} - Tomate: {self.__tomate} -"
+                     f" Cebolla: {self.__cebolla}\nMayonesa: {self.__mayonesa} - Carne: {self.__carne} -"
+                     f" Ketchup: {self.__ketpchup} - Tocino: {self.__tocino}")
 
     def gettime(self):
         return self.__time

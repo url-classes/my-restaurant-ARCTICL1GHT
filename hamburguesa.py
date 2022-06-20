@@ -2,6 +2,7 @@ class Hamburguesa:
     def reset(self):
         raise NotImplementedError
 
+    @property
     def gettime(self):
         raise NotImplementedError
 

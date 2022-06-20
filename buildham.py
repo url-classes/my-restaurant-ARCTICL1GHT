@@ -31,6 +31,9 @@ class BuildHam(Hamburguesa, ABC):
         self.resultado.addmayonesa()
         return ""
 
+    def gettime(self):
+        return self.resultado.gettime()
+
     def tocinostep(self):
         self.resultado.addtocino()
         return ""

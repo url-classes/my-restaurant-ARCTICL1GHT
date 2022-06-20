@@ -20,6 +20,7 @@ class Director:
             self.hamburguesa.quesostep()
             self.hamburguesa.mayonesastep()
             self.hamburguesa.ketpchupstep()
+            self.hamburguesa.tomatestep()
             self.hamburguesa.cebollastep()
             self.hamburguesa.panstep()
             return print()
