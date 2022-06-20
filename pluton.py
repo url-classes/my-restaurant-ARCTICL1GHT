@@ -30,7 +30,7 @@ class Pluton(Menu):
 
     def createham(self):
         hamburguesa: Director = Director()
-        hamburguesa.makehamburguesa("Queso")
+        hamburguesa.makehamburguesa("Tocino")
         self.__tiempo += hamburguesa.hamburguresa()
         self.__precio += hamburguesa.getprice()
 

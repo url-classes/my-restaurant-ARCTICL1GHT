@@ -1,3 +1,4 @@
+from director import Director
 from menu import Menu
 from bebida import Bebida
 from postres import Postres
@@ -27,10 +28,17 @@ class Venus(Menu):
         self.__precio += helado.precio()
         self.__tiempo += helado.tiempo()
 
+    def createham(self):
+        hamburguesa: Director = Director()
+        hamburguesa.makehamburguesa("Tocino")
+        self.__tiempo += hamburguesa.hamburguresa()
+        self.__precio += hamburguesa.getprice()
+
     def pedido(self):
         self.createcomp()
         self.createbeb()
         self.createpost()
+        self.createham()
 
     def precio(self):
         return self.__precio
