@@ -30,7 +30,7 @@ class Lunar(Menu):
 
     def createham(self):
         hamburguesa: Director = Director()
-        hamburguesa.makehamburguesa("Queso")
+        hamburguesa.quesomake()
         self.__tiempo += hamburguesa.hamburguresa()
         self.__precio += hamburguesa.getprice()
 

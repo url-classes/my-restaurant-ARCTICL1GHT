@@ -30,7 +30,7 @@ class Venus(Menu):
 
     def createham(self):
         hamburguesa: Director = Director()
-        hamburguesa.makehamburguesa("Tocino")
+        hamburguesa.tocinomake()
         self.__tiempo += hamburguesa.hamburguresa()
         self.__precio += hamburguesa.getprice()
 

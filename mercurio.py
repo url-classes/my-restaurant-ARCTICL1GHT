@@ -30,7 +30,7 @@ class Mercurio(Menu):
 
     def createham(self):
         hamburguesa: Director = Director()
-        hamburguesa.makehamburguesa("Tocino")
+        hamburguesa.quesodoblemake()
         self.__tiempo += hamburguesa.hamburguresa()
         self.__precio += hamburguesa.getprice()
 
