@@ -13,8 +13,7 @@ class Director:
     def getprice(self):
         return self.hamburguesa.getprice()
 
-    def makehamburguesa(self, type: str):
-        if "Queso" == type:
+    def quesomake(self):
             self.hamburguesa.panstep()
             self.hamburguesa.carnestep()
             self.hamburguesa.quesostep()
@@ -24,7 +23,8 @@ class Director:
             self.hamburguesa.cebollastep()
             self.hamburguesa.panstep()
             return print()
-        if "Tocino" == type:
+
+    def tocinomake(self):
             self.hamburguesa.panstep()
             self.hamburguesa.carnestep()
             self.hamburguesa.tocinostep()
@@ -33,7 +33,8 @@ class Director:
             self.hamburguesa.tomatestep()
             self.hamburguesa.cebollastep()
             self.hamburguesa.panstep()
-        if "QuesoTocino" == type:
+
+    def quesotocinomake(self):
             self.hamburguesa.panstep()
             self.hamburguesa.carnestep()
             self.hamburguesa.quesostep()
@@ -43,7 +44,8 @@ class Director:
             self.hamburguesa.tomatestep()
             self.hamburguesa.cebollastep()
             self.hamburguesa.panstep()
-        if "QuesoDoble" == type:
+
+    def quesodoblemake(self):
             self.hamburguesa.panstep()
             self.hamburguesa.carnestep()
             self.hamburguesa.quesostep()
@@ -55,7 +57,8 @@ class Director:
             self.hamburguesa.carnestep()
             self.hamburguesa.quesostep()
             self.hamburguesa.panstep()
-        if "Simple" == type:
+
+    def simplemake(self):
             self.hamburguesa.panstep()
             self.hamburguesa.carnestep()
             self.hamburguesa.tomatestep()
