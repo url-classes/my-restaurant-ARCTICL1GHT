@@ -14,19 +14,19 @@ class Pluton(Menu):
         self.__tiempo: float = 0
 
     def createcomp(self):
-        papas: Complemento = Ensalada()
-        self.__precio += papas.precio()
-        self.__tiempo += papas.tiempo()
+        complemento: Complemento = Ensalada()
+        self.__precio += complemento.precio()
+        self.__tiempo += complemento.tiempo()
 
     def createbeb(self):
-        coca: Bebida = Te()
-        self.__precio += coca.precio()
-        self.__tiempo += coca.tiempo()
+        bebida: Bebida = Te()
+        self.__precio += bebida.precio()
+        self.__tiempo += bebida.tiempo()
 
     def createpost(self):
-        helado: Postres = Galleta()
-        self.__precio += helado.precio()
-        self.__tiempo += helado.tiempo()
+        postre: Postres = Galleta()
+        self.__precio += postre.precio()
+        self.__tiempo += postre.tiempo()
 
     def createham(self):
         hamburguesa: Director = Director()
